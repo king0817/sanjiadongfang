@@ -1,0 +1,191 @@
+body {
+    min-width: 1200px;
+}
+
+.container {
+    min-width: 1200px;
+}
+
+header {
+    width: 100%;
+    height: 72px;
+    background-image: url(../images/bg-top.jpg);
+    background-repeat-x: initial;
+    span {
+        width: 12.5%;
+        display: block;
+        float: left;
+        padding: 20px 15px;
+        a {
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-family: "微软雅黑";
+            line-height: 32px;
+            display: inline-block;
+            width: 90%;
+            border-radius: 18px;
+            color: black;
+            transition: background-color .3s;
+        }
+        a:hover {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            box-shadow: 0 0 5px #999 inset;
+            transition: background-color .3s;
+            font-weight: 600;
+        }
+        .active {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            box-shadow: 0 0 5px #999 inset;
+            transition: background-color .3s;
+            font-weight: 600;
+        }
+    }
+    .logo {
+        box-sizing: border-box;
+        line-height: 0;
+        padding: 0;
+        a {
+            border-radius: 0;
+            text-align: left;
+            img {
+                height: 72px;
+                ;
+            }
+        }
+        a:hover {
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+    .swiper-button-next {
+        right: 50px;
+    }
+    .swiper-button-prev {
+        left: 50px;
+    }
+}
+
+.Division {
+    width: 100%;
+    height: 18px;
+}
+
+.bg-Division {
+    background-image: url(../images/hr-bg.jpg);
+    background-repeat-x: inherit;
+}
+
+.container-img {
+    width: 92.5%;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        width: 100%;
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    .bgfoot {
+        position: relative;
+        width: 100%;
+        z-index: -999;
+    }
+    .footer-p {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .footer-container {
+        width: 92.5%;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+            width: 100%;
+        }
+    }
+    //  .w-40 {
+    //      width: 40%;
+    //  }
+    //  .w-60 {
+    //      width: 60%;
+    //  }
+    .footer-box {
+        width: 100%;
+        min-width: 700px;
+        margin: 4% auto 0 auto;
+        //      border: 1px solid #002752;
+        .float-left {
+            border-right: 4px solid #000000;
+            width: 50%;
+            text-align: right;
+            img {
+                margin-right: 15%;
+            }
+        }
+        .float-right {
+            width: 50%;
+            .weixin-box {
+                //              border: 1px solid #002752;
+                //              margin-left: 15%;
+                width: 60%;
+                text-align: center;
+                .weixin {
+                    width: 40%;
+                    //          border: 1px solid red;
+                }
+                p {
+                    font-size: 1.6rem;
+                    margin: .3rem 0;
+                    padding: 0;
+                    text-align: center;
+                }
+                .footer-title {
+                    font-size: 2rem;
+                    margin: 1.5rem 0 0 0;
+                }
+            }
+        }
+        .footer-logo {
+            width: 25%;
+        }
+    }
+}
+
+.foot {
+    width: 100%;
+    background-color: #000;
+    height: 80px;
+    text-align: center;
+    color: white;
+    line-height: 80px;
+    font-size: 16px;
+}
+
+@media(max-width:1450px) {
+    .footer-box {
+        .weixin-box {
+            margin-left: 5%;
+            p {
+                margin: 0 !important;
+            }
+        }
+    }
+}
+.exhibition-img{
+    img{
+        width: 100%;
+    }
+}
