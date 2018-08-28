@@ -9,9 +9,14 @@
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/swiper.min.css"/>
     <link rel="stylesheet" href="css/sanjia.css"/>
+    <style>
+        * {
+            -webkit-touch-callout: none;
+        }
+    </style>
 </head>
 
-<body>
+<body ondragstart="return false">
 <header>
     <div class="container">
         <nav class="clearfix">
@@ -36,7 +41,7 @@
             <div class="swiper-slide"><img src="images/banner4.jpg" alt=""/></div>
         </div>
         <!-- Add Scrollbar -->
-        <div class="swiper-scrollbar"></div>
+        <div class="swiper-pagination"></div>
         <!-- Add Arrows -->
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
