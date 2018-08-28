@@ -1,216 +1,329 @@
 body {
-    min-width: 1200px;
+  min-width: 1200px;
 }
-
 .container {
-    min-width: 1200px;
+  min-width: 1200px;
 }
-
 header {
-    width: 100%;
-    height: 72px;
-    background-image: url(../images/bg-top.jpg);
-    background-repeat-x: initial;
+  width: 100%;
+  height: 72px;
+  background-image: url(../images/bg-top.jpg);
+  background-repeat-x: initial;
 }
-
 header span {
-    width: 12.5%;
-    display: block;
-    float: left;
-    padding: 20px 15px;
+  width: 12.5%;
+  display: block;
+  float: left;
+  padding: 20px 15px;
 }
-
 header span a {
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 15px;
-    font-family: "微软雅黑";
-    line-height: 32px;
-    display: inline-block;
-    width: 90%;
-    border-radius: 18px;
-    color: black;
-    transition: background-color 0.3s;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "微软雅黑";
+  line-height: 32px;
+  display: inline-block;
+  width: 90%;
+  border-radius: 18px;
+  color: black;
+  transition: background-color 0.3s;
 }
-
 header span a:hover {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    box-shadow: 0 0 5px #999 inset;
-    transition: background-color 0.3s;
-    font-weight: 600;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 0 5px #999 inset;
+  transition: background-color 0.3s;
+  font-weight: 600;
 }
-
 header span .active {
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    box-shadow: 0 0 5px #999 inset;
-    transition: background-color 0.3s;
-    font-weight: 600;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 0 5px #999 inset;
+  transition: background-color 0.3s;
+  font-weight: 600;
 }
-
 header .logo {
-    box-sizing: border-box;
-    line-height: 0;
-    padding: 0;
+  box-sizing: border-box;
+  line-height: 0;
+  padding: 0;
 }
-
 header .logo a {
-    border-radius: 0;
-    text-align: left;
+  border-radius: 0;
+  text-align: left;
 }
-
 header .logo a img {
-    height: 72px;
+  height: 72px;
 }
-
 header .logo a:hover {
-    background-color: transparent;
-    box-shadow: none;
+  background-color: transparent;
+  box-shadow: none;
 }
-
 .banner img {
-    width: 100%;
+  width: 100%;
 }
-
 .banner .swiper-button-next {
-    right: 50px;
+  right: 50px;
 }
-
 .banner .swiper-button-prev {
-    left: 50px;
+  left: 50px;
 }
-
 .Division {
-    width: 100%;
-    height: 18px;
+  width: 100%;
+  height: 18px;
 }
-
 .bg-Division {
-    background-image: url(../images/hr-bg.jpg);
-    background-repeat-x: inherit;
+  background-image: url(../images/hr-bg.jpg);
+  background-repeat-x: inherit;
 }
-
 .container-img {
-    width: 92.5%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 92.5%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .container-img img {
-    width: 100%;
+  width: 100%;
 }
-
 footer {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
-
 footer .bgfoot {
-    position: relative;
-    width: 100%;
-    z-index: -999;
+  position: relative;
+  width: 100%;
+  z-index: -999;
 }
-
 footer .footer-p {
-    position: absolute;
-    top: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-
 footer .footer-container {
-    width: 92.5%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 92.5%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 footer .footer-container img {
-    width: 100%;
+  width: 100%;
 }
-
 footer .footer-box {
-    width: 100%;
-    min-width: 700px;
-    margin: 4% auto 0 auto;
+  width: 100%;
+  min-width: 700px;
+  margin: 4% auto 0 auto;
 }
-
 footer .footer-box .float-left {
-    border-right: 4px solid #000000;
-    width: 50%;
-    text-align: right;
+  border-right: 4px solid #000000;
+  width: 50%;
+  text-align: right;
 }
-
 footer .footer-box .float-left img {
-    margin-right: 15%;
+  margin-right: 15%;
 }
-
 footer .footer-box .float-right {
-    width: 50%;
+  width: 50%;
 }
-
 footer .footer-box .float-right .weixin-box {
-    width: 60%;
-    text-align: center;
+  width: 60%;
+  text-align: center;
 }
-
 footer .footer-box .float-right .weixin-box .weixin {
-    width: 40%;
+  width: 40%;
 }
-
 footer .footer-box .float-right .weixin-box p {
-    font-size: 1.6rem;
-    margin: 0.3rem 0;
-    padding: 0;
-    text-align: center;
+  font-size: 1.6rem;
+  margin: 0.3rem 0;
+  padding: 0;
+  text-align: center;
 }
-
 footer .footer-box .float-right .weixin-box .footer-title {
-    font-size: 2rem;
-    margin: 1.5rem 0 0 0;
+  font-size: 2rem;
+  margin: 1.5rem 0 0 0;
 }
-
 footer .footer-box .footer-logo {
-    width: 25%;
+  width: 25%;
 }
-
 .foot {
-    width: 100%;
-    background-color: #000;
-    height: 80px;
-    text-align: center;
-    color: white;
-    line-height: 80px;
-    font-size: 16px;
+  width: 100%;
+  background-color: #000;
+  height: 80px;
+  text-align: center;
+  color: white;
+  line-height: 80px;
+  font-size: 16px;
 }
-
 @media (max-width: 1450px) {
-    .footer-box .weixin-box {
-        margin-left: 5%;
-    }
-
-    .footer-box .weixin-box p {
-        margin: 0 !important;
-    }
+  .footer-box .weixin-box {
+    margin-left: 5%;
+  }
+  .footer-box .weixin-box p {
+    margin: 0 !important;
+  }
 }
-
 .img-100 img {
-    width: 100%;
+  width: 100%;
 }
-
 .swiper-pagination-bullet-active {
-    background-color: black !important;
+  background-color: black !important;
 }
-
 .swiper-button-next {
-    background: none;
+  background: none;
 }
-
 .swiper-button-prev {
-    background: none;
+  background: none;
 }
-.swiper-button-next,.swiper-button-prev{
-    font-size: 5rem;
-
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 5rem;
+}
+.vision-table {
+  width: 100%;
+}
+.vision-table th,
+.vision-table td {
+  border: 1px solid #666;
+  font-size: 2rem;
+  text-align: center;
+  height: 5rem;
+  font-family: 微软雅黑;
+  font-weight: 300;
+}
+.vision-tables {
+  width: 100%;
+}
+.vision-tables th,
+.vision-tables td {
+  border: 1px solid #666;
+  font-size: 1.8rem;
+  text-align: center;
+  height: 5rem;
+  font-family: 微软雅黑;
+  font-weight: 300;
+}
+.vision-tables .quyu {
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  text-align: justify;
+}
+.pd0 {
+  padding: 0;
+}
+.container-table {
+  width: 63%;
+  margin: 0 auto;
+}
+.bg-table {
+  background-image: url(../images/touzi/tablebg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.table-title {
+  margin: 5rem 0 2rem 0;
+}
+.table-title img {
+  width: 20%;
+}
+.table-title .float-left,
+.table-title .float-right {
+  font-size: 20px;
+  line-height: 3.35rem;
+}
+.zongbu-text {
+  position: relative;
+}
+.zongbu-text img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.zongbu-text .zongbu-p {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.zongbu-text .zongbu-p .container-zongbu {
+  width: 62.447917%;
+  margin: 0 auto;
+  padding: 3% 0;
+}
+.zongbu-text .zongbu-p .container-zongbu p {
+  font-size: 2rem;
+  line-height: 3.35rem;
+  text-align: justify;
+  text-indent: 2em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media (max-width: 1500px) {
+  .zongbu-text .zongbu-p .container-zongbu {
+    padding: 2% 0;
+  }
+  .zongbu-text .zongbu-p .container-zongbu p {
+    font-size: 2rem;
+    line-height: 2.75rem;
+  }
+}
+.container-lianxi {
+  width: 62.447917%;
+  margin: 0 auto;
+}
+.container-lianxi .kefubox {
+  height: 520px;
+  position: relative;
+}
+.container-lianxi .kefubox .map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  border: 20px solid #d5eae1;
+}
+.container-lianxi .kefubox .kefu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+.lianxi-bg {
+  background-color: #d5eae1;
+}
+.form {
+  padding: 10rem 0 5rem 0;
+}
+.form .xinxi {
+  width: 40%;
+  float: left;
+}
+.form .xinxi .form-group {
+  margin-bottom: 3rem;
+}
+.form .xinxi .form-group label,
+.form .xinxi .form-group input,
+.form .xinxi .form-group template {
+  display: inline-block;
+  float: left;
+}
+.form .xinxi .form-group label {
+  width: 20%;
+  font-size: 2rem;
+  line-height: 3.9rem;
+  font-weight: 600;
+  text-align: center;
+}
+.form .xinxi .form-group .form-control {
+  height: 4rem;
+  width: 80%;
+}
+.form .xinxi .form-group textarea {
+  height: 10rem;
+}
+.form .wechat {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.form .wechat img {
+  width: 80%;
+  margin: 0 auto;
 }

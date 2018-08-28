@@ -194,3 +194,179 @@ footer {
 .swiper-pagination-bullet-active {
   background-color: black !important;
 }
+
+.swiper-button-next {
+  background: none;
+}
+
+.swiper-button-prev {
+  background: none;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  font-size: 5rem;
+}
+
+.vision-table {
+  width: 100%;
+  th, td {
+    border: 1px solid #666;
+    font-size: 2rem;
+    text-align: center;
+    height: 5rem;
+    font-family: 微软雅黑;
+    font-weight: 300;
+  }
+}
+
+.vision-tables {
+  width: 100%;
+  th, td {
+    border: 1px solid #666;
+    font-size: 1.8rem;
+    text-align: center;
+    height: 5rem;
+    font-family: 微软雅黑;
+    font-weight: 300;
+
+  }
+  .quyu {
+    //text-align: left !important;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+}
+
+.pd0 {
+  padding: 0;
+}
+
+.container-table {
+  width: 63%;
+  margin: 0 auto;
+}
+
+.bg-table {
+  background-image: url(../images/touzi/tablebg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.table-title {
+  margin: 5rem 0 2rem 0;
+  img {
+    width: 20%;
+  }
+  .float-left, .float-right {
+    font-size: 20px;
+    line-height: 3.35rem;
+  }
+}
+
+.zongbu-text {
+  position: relative;
+  img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .zongbu-p {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .container-zongbu {
+      width: 62.447917%;
+      margin: 0 auto;
+      padding: 3% 0;
+      p {
+        font-size: 2rem;
+        line-height: 3.35rem;
+        text-align: justify;
+        text-indent: 2em;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .zongbu-text {
+    .zongbu-p {
+      .container-zongbu {
+        padding: 2% 0;
+        p {
+          font-size: 2rem;
+          line-height: 2.75rem;
+        }
+      }
+    }
+  }
+}
+
+.container-lianxi {
+  width: 62.447917%;
+  margin: 0 auto;
+  .kefubox {
+    height: 520px;
+    position: relative;
+    .map {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      border: 20px solid #d5eae1;
+    }
+    .kefu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 9999;
+    }
+  }
+}
+
+.lianxi-bg {
+  background-color: #d5eae1;
+}
+
+.form {
+  padding: 10rem 0 5rem 0;
+  .xinxi {
+    width: 40%;
+    float: left;
+    .form-group {
+      margin-bottom:3rem;
+      label, input, template {
+        display: inline-block;
+        float: left;
+      }
+      label {
+        width: 20%;
+        font-size: 2rem;
+        line-height: 3.9rem;
+        font-weight: 600;
+        //border: 1px solid #000;
+        text-align: center;
+      }
+      .form-control{
+        height: 4rem;
+        width:80%;
+      }
+      textarea{
+        height: 10rem;
+      }
+    }
+  }
+  .wechat {
+    width: 20%;
+    float: left;
+    text-align: center;
+    img{
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
