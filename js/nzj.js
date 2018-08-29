@@ -64,7 +64,7 @@ $(function () {
             }
         });
         $("#reset").click(function () {
-            $("input,textarea").val("")
+            $("input,textarea").val("").removeClass("is-invalid");
         })
     };
     form()

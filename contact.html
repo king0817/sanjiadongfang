@@ -24,10 +24,10 @@
             <span><a href="index.html">首页</a></span>
             <span><a href="introduce.html">项目介绍</a></span>
             <span><a href="exhibition.html">美味展示</a></span>
-            <span><a class="active" href="vision.html">视觉形象</a></span>
+            <span><a href="vision.html">视觉形象</a></span>
             <span><a href="profit.html">投资盈利</a></span>
             <span><a href="headquarters.html">总部介绍</a></span>
-            <span><a href="contact.html">联系我们</a></span>
+            <span><a class="active" href="contact.html">联系我们</a></span>
         </nav>
     </div>
 </header>
@@ -60,6 +60,78 @@
     <div class="kefubox">
         <div class="map">
 
+            <script type="text/javascript"
+                    src="http://api.map.baidu.com/api?v=2.0&ak=0qRoh8zhclwjfI32XI8SQaU5cOkXZlAd"></script>
+
+            <div style="width:100%;height:400px;font-size:12px" id="map"></div>
+            <script type="text/javascript">
+                //创建和初始化地图函数：
+                function initMap() {
+                    createMap();//创建地图
+                    setMapEvent();//设置地图事件
+                    addMapControl();//向地图添加控件
+                    addMapOverlay();//向地图添加覆盖物
+                }
+                function createMap() {
+                    map = new BMap.Map("map");
+                    map.centerAndZoom(new BMap.Point(116.382208, 39.861183), 14);
+                }
+                function setMapEvent() {
+                    map.enableScrollWheelZoom();
+                    map.enableKeyboard();
+                    map.enableDragging();
+                    map.enableDoubleClickZoom()
+                }
+                function addClickHandler(target, window) {
+                    target.addEventListener("click", function () {
+                        target.openInfoWindow(window);
+                    });
+                }
+                function addMapOverlay() {
+                    var markers = [
+                        {
+                            content: "",
+                            title: "女主角（北京）餐饮管理有限公司",
+                            imageOffset: {width: -23, height: -21},
+                            position: {lat: 39.861381, lng: 116.375138}
+                        },
+                    ];
+                    for (var index = 0; index < markers.length; index++) {
+                        var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+                        var marker = new BMap.Marker(point, {
+                            icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                                imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                            })
+                        });
+                        var label = new BMap.Label(markers[index].title, {offset: new BMap.Size(25, 5)});
+                        var opts = {
+                            width: 200,
+                            title: markers[index].title,
+                            enableMessage: false
+                        };
+                        var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+                        marker.setLabel(label);
+                        addClickHandler(marker, infoWindow);
+                        map.addOverlay(marker);
+                    }
+                    ;
+                }
+                //向地图添加控件
+                function addMapControl() {
+                    var scaleControl = new BMap.ScaleControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});
+                    scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                    map.addControl(scaleControl);
+                    var navControl = new BMap.NavigationControl({
+                        anchor: BMAP_ANCHOR_TOP_LEFT,
+                        type: BMAP_NAVIGATION_CONTROL_LARGE
+                    });
+                    map.addControl(navControl);
+                    var overviewControl = new BMap.OverviewMapControl({anchor: BMAP_ANCHOR_BOTTOM_RIGHT, isOpen: true});
+                    map.addControl(overviewControl);
+                }
+                var map;
+                initMap();
+            </script>
         </div>
         <div class="kefu">
             <img src="images/lianxi/kefu.png" alt=""/>
@@ -96,6 +168,7 @@
                     <div class="form-group clearfix">
                         <label>留言</label>
                         <textarea id="text" rows="5" class="form-control"></textarea>
+
                         <div class="btnbox">
                             <button id="submit">提交</button>
                             <button id="reset">重置</button>
@@ -139,5 +212,9 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/nzj.js"></script>
-
+<script>
+    var wwidth = $(".lianxi-bg").width();
+    $(".kefubox").height(wwidth * .27);
+    $("#map").height(wwidth * .27)
+</script>
 </html>

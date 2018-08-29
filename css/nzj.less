@@ -307,6 +307,7 @@ footer {
 }
 
 .container-lianxi {
+  padding: 3rem 0 0 0;
   width: 62.447917%;
   margin: 0 auto;
   .kefubox {
@@ -318,12 +319,18 @@ footer {
       left: 0;
       z-index: 999;
       border: 20px solid #d5eae1;
+      width: 70%
     }
     .kefu {
+      width: 50%;
       position: absolute;
-      right: 0;
-      top: 0;
+      right: -4rem;
+      bottom: -2rem;
       z-index: 9999;
+      text-align: right;
+      img {
+        width: 85%;
+      }
     }
   }
 }
@@ -408,4 +415,11 @@ footer {
       margin: 0 auto;
     }
   }
+}
+
+.BMapLabel {
+  border: none !important;
+  padding: 5px !important;
+  margin-top: -7px;
+  font-size: 14px !important;
 }
