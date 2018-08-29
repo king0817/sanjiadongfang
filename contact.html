@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/animate.css"/>
     <link rel="stylesheet" href="css/swiper.min.css"/>
-    <link rel="stylesheet" href="css/sanjia.css"/>
+    <link rel="stylesheet" href="css/nzj.css"/>
     <style>
         * {
             -webkit-touch-callout: none;
@@ -73,19 +73,19 @@
                 <div class="xinxi">
                     <div class="form-group clearfix">
                         <label>姓名</label>
-                        <input type="text" class="form-control"/>
+                        <input id="name" type="text" class="form-control"/>
                     </div>
                     <div class="form-group clearfix">
                         <label>电话</label>
-                        <input type="tel" class="form-control"/>
+                        <input id="tel" type="tel" class="form-control"/>
                     </div>
                     <div class="form-group clearfix">
                         <label>邮箱</label>
-                        <input type="email" class="form-control"/>
+                        <input id="email" type="email" class="form-control"/>
                     </div>
                     <div class="form-group clearfix">
                         <label>地址</label>
-                        <input type="text" class="form-control"/>
+                        <input id="where" type="text" class="form-control"/>
                     </div>
                 </div>
                 <div class="wechat">
@@ -95,13 +95,10 @@
                 <div class="xinxi">
                     <div class="form-group clearfix">
                         <label>留言</label>
-                <textarea class="form-control">
-
-                </textarea>
-
+                        <textarea id="text" rows="5" class="form-control"></textarea>
                         <div class="btnbox">
-                            <button>提交</button>
-                            <button>重置</button>
+                            <button id="submit">提交</button>
+                            <button id="reset">重置</button>
                         </div>
                     </div>
                 </div>
@@ -141,6 +138,6 @@
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/swiper.js"></script>
-<script src="js/sanjia.js"></script>
+<script src="js/nzj.js"></script>
 
 </html>
