@@ -17,13 +17,14 @@
     <div class="container">
         <table class="table">
             <tr>
-                <th>姓名</th>
-                <th>电话</th>
-                <th>留言选项</th>
-                <th>留言内容</th>
-                <th>IP地址</th>
-                <th>留言时间</th>
-                <th>操作</th>
+                <th width="10%">姓名</th>
+                <th width="10%">电话</th>
+                <th width="10%">邮箱</th>
+                <th width="10%">地址</th>
+                <th width="35%">留言内容</th>
+                <th width="10%">IP地址</th>
+                <th width="10%">留言时间</th>
+                <th width="5%">操作</th>
             </tr>
             <?php
             // 获取留言信息，解析后输出到表格中
@@ -45,6 +46,7 @@
                     echo "<td>{$ly[2]}</td>";
                     echo "<td>{$ly[3]}</td>";
                     echo "<td>{$ly[4]}</td>";
+                    echo "<td>{$ly[5]}</td>";
                     echo "<td>" . date("Y-m-d H:i:s", $ly[5]) . "</td>";
                     echo "<td><a href = 'javascript:dodel({$k})'>删除</a></td>";
 

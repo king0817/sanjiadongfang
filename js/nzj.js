@@ -64,7 +64,7 @@ $(function () {
             }
         });
         $("#reset").click(function () {
-            $("input").val("")
+            $("input,textarea").val("")
         })
     };
     form()
